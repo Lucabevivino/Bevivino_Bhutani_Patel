@@ -33,4 +33,4 @@ the Requirement Engineering & Design (R&DD) and the Implementation & Testing
 
 ## Reference professor
 
-Elisabetta Di Nitto — https://github.com/dinitto
+Matteo Camilli — [https://github.com/matteocamilli](https://github.com/matteocamilli)

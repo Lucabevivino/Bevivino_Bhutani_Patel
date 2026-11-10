@@ -1,0 +1,48 @@
+% frontpage.tex — front page (project title, version, names, release date).
+% Uses the macros \docdoctype, \docversion and \docacademicyear defined in the
+% main .tex file.
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+
+  \vspace*{2.5cm}
+
+  {\fontsize{44}{52}\selectfont\bfseries RacePulse\par}
+
+  \vspace{1cm}
+
+  {\LARGE \docdoctype\par}
+
+  \vspace{0.5cm}
+
+  {\large Version \docversion\par}
+
+  \vfill
+
+  \rule{\textwidth}{0.4pt}
+
+  \vspace{0.8cm}
+
+  {\Large Software Engineering 2\par}
+  \vspace{0.2cm}
+  {\large Politecnico di Milano --- A.Y. \docacademicyear\par}
+
+  \vfill
+
+  \large
+  \begin{tabular}{c}
+    \textbf{Group members} \\[0.4em]
+    Luca Bevivino \\
+    Liza Bhutani \\
+    Jeel Patel \\[1.2em]
+    \textbf{Reference professor} \\[0.4em]
+    Matteo Camilli \\
+  \end{tabular}
+
+  \vfill
+
+  {\large \today\par}
+
+  \vspace*{1.5cm}
+\end{titlepage}

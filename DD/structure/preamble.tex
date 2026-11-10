@@ -1,0 +1,75 @@
+% preamble.tex — common preamble for the RacePulse DD document.
+% Loaded by DD.tex via \input{structure/preamble}.
+% Compile with pdflatex (run twice for the TOC / cross-references).
+
+% ---------------------------------------------------------------------------
+% Font & encoding
+% ---------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+
+% ---------------------------------------------------------------------------
+% Page geometry
+% ---------------------------------------------------------------------------
+\usepackage[a4paper,
+            top=3cm, bottom=3cm,
+            left=2.5cm, right=2.5cm,
+            headheight=15pt]{geometry}
+
+% ---------------------------------------------------------------------------
+% Graphics, colors, tables
+% ---------------------------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{{figures/}{DD/figures/}}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+
+% ---------------------------------------------------------------------------
+% Lists, math, code
+% ---------------------------------------------------------------------------
+\usepackage{enumitem}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small, frame=single, breaklines=true}
+
+% ---------------------------------------------------------------------------
+% Captions & floats
+% ---------------------------------------------------------------------------
+\usepackage{caption}
+\usepackage{float}
+
+% ---------------------------------------------------------------------------
+% Headers & footers
+% ---------------------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape\docheader}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+% ---------------------------------------------------------------------------
+% Hyperlinks (load last)
+% ---------------------------------------------------------------------------
+\usepackage[hidelinks]{hyperref}
+
+% ---------------------------------------------------------------------------
+% Section numbering — IEEE-derived scheme from the assignment:
+%   Level 1 (section)       : 1, 2, 3 ...
+%   Level 2 (subsection)    : 1.A, 1.B ... (letters)
+%   Level 3 (subsubsection) : 3.A.1, 3.E.2 ... (number under a letter)
+% ---------------------------------------------------------------------------
+\renewcommand{\thesubsection}{\thesection.\Alph{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+\setcounter{tocdepth}{3}    % show three heading levels in the table of contents
+\setcounter{secnumdepth}{3} % number three heading levels
+
+% Figures and tables numbered per section (e.g. Figure 2.3)
+\numberwithin{figure}{section}
+\numberwithin{table}{section}

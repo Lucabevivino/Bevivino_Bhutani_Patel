@@ -1,0 +1,33 @@
+% DD.tex — Design Document (main file).
+% Compile from this directory with:  pdflatex DD.tex  (run twice for TOC/refs).
+% Figures go in DD/figures/.
+
+\documentclass[11pt,a4paper]{article}
+\input{structure/preamble}
+
+% --- Document metadata (used by the front page and headers) ------------------
+\newcommand{\docversion}{v1.0}
+\newcommand{\docdoctype}{Design Document}
+\newcommand{\docacademicyear}{2026--2027}
+\newcommand{\docheader}{RacePulse --- DD}
+
+\begin{document}
+
+% --- Front page --------------------------------------------------------------
+\input{structure/frontpage}
+
+% --- Table of contents -------------------------------------------------------
+\tableofcontents
+\newpage
+
+% --- Chapters (one file per chapter) -----------------------------------------
+\input{chapters/01_introduction}
+\input{chapters/02_architectural_design}
+\input{chapters/03_user_interface_design}
+\input{chapters/04_requirements_traceability}
+\input{chapters/05_implementation_integration_test_plan}
+\input{chapters/06_effort_spent}
+\input{chapters/07_generative_ai_disclosure}
+\input{chapters/08_references}
+
+\end{document}

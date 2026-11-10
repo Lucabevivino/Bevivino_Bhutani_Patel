@@ -1,0 +1,32 @@
+% RASD.tex — Requirements Analysis and Specification Document (main file).
+% Compile from this directory with:  pdflatex RASD.tex  (run twice for TOC/refs).
+% Figures go in RASD/figures/ and the Alloy model in RASD/alloy/.
+
+\documentclass[11pt,a4paper]{article}
+\input{structure/preamble}
+
+% --- Document metadata (used by the front page and headers) ------------------
+\newcommand{\docversion}{v1.0}
+\newcommand{\docdoctype}{Requirements Analysis and Specification Document}
+\newcommand{\docacademicyear}{2026--2027}
+\newcommand{\docheader}{RacePulse --- RASD}
+
+\begin{document}
+
+% --- Front page --------------------------------------------------------------
+\input{structure/frontpage}
+
+% --- Table of contents -------------------------------------------------------
+\tableofcontents
+\newpage
+
+% --- Chapters (one file per chapter) -----------------------------------------
+\input{chapters/01_introduction}
+\input{chapters/02_overall_description}
+\input{chapters/03_specific_requirements}
+\input{chapters/04_formal_analysis_alloy}
+\input{chapters/05_effort_spent}
+\input{chapters/06_generative_ai_disclosure}
+\input{chapters/07_references}
+
+\end{document}

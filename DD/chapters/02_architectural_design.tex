@@ -1,0 +1,36 @@
+% Chapter 2 — Architectural Design
+\section{Architectural Design}
+
+\subsection{Overview}
+% TODO: High-level components and their interaction. One high-level diagram +
+%       end-to-end flow: Ingestion/Collector -> message bus -> Storage ->
+%       Query/API + Replay -> GUI, plus the Subscription/Notification concern.
+%       State tiers and interaction style (event-driven live, request/response
+%       historical).
+
+\subsection{Component view}
+% TODO: UML component diagram (provided/required interfaces) + a table:
+%       component -> responsibility -> key interfaces -> NFR addressed.
+%       Fix component names here (they are reused by 2.E and §4).
+
+\subsection{Deployment view}
+% TODO: UML deployment diagram + scaling rationale (LB, app servers, DB, broker,
+%       cache, GUI). One paragraph per NFR: which decision satisfies PR-1/2/4/7/8.
+
+\subsection{Runtime view}
+% TODO: Sequence diagrams describing how components interact to accomplish
+%       specific tasks tied to the use cases (e.g. live telemetry push,
+%       historical query, replay).
+
+\subsection{Component interfaces}
+% TODO: Formal description of each component's interfaces (signatures, data
+%       formats, ports). Reuse the exact component names from 2.B.
+
+\subsection{Selected architectural styles and patterns}
+% TODO: Per pattern: name -> where used -> which requirement it buys -> why over
+%       the alternative. Candidates: Layered, Publish/Subscribe, Modular Monolith
+%       vs. Microservices, CQRS, Repository/Adapter (decouples OpenF1).
+
+\subsection{Other design decisions}
+% TODO: Decisions not covered above: data model/partitioning, caching, error and
+%       retry policies, configuration, logging, security choices.

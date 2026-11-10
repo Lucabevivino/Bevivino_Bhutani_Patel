@@ -1,0 +1,61 @@
+% Chapter 3 — Specific Requirements
+\section{Specific Requirements}
+
+\subsection{External Interface Requirements}
+
+\subsubsection{User Interfaces}
+% TODO: The GUI — what it exposes and how human consumers interact (live view,
+%       historical replay, subscription selection).
+
+\subsubsection{Hardware Interfaces}
+% TODO: Physical devices, if any (sensors/timing/weather stations are behind
+%       OpenF1 and out of scope; document the boundary).
+
+\subsubsection{Software Interfaces}
+% TODO: The API exposed to third-party applications, and the interface toward
+%       OpenF1 (external provider).
+
+\subsubsection{Communication Interfaces}
+% TODO: Protocols and data formats: HTTP/REST, JSON, WebSocket/SSE for live push,
+%       time synchronization, ports.
+
+\subsection{Functional Requirements}
+% TODO: Use-case diagrams, use cases, and associated sequence/activity diagrams,
+%       plus the mapping from use cases onto requirement IDs.
+
+\subsection{Performance Requirements}
+% TODO: Measurable non-functional requirements (NFRs) PR-1..PR-8:
+%       latency (2 s / 1 s), throughput, no silent data loss, 99.9% availability,
+%       5-year retention, 3 s historical first-results, capacity 10k users + 100
+%       systems, consumer isolation. Add how each will be verified (feeds DD §5).
+
+\subsection{Design Constraints}
+
+\subsubsection{Standards compliance}
+% TODO: Standards to comply with (HTTP/REST, JSON, WebSocket/SSE, time sync).
+
+\subsubsection{Hardware limitations}
+% TODO: Deployment targets, storage sizing for 5-year retention (back-of-envelope).
+
+\subsubsection{Any other constraint}
+% TODO: "All acquired data stored persistently" (mandated), OpenF1 rate limits,
+%       live-data exclusion, open-source/licensing.
+
+\subsection{Software System Attributes}
+
+\subsubsection{Reliability}
+% TODO: Fault tolerance, no silent loss, at-least-once delivery.
+
+\subsubsection{Availability}
+% TODO: 99.9% of a session (cross-ref PR-4); consumer isolation (PR-8).
+
+\subsubsection{Security}
+% TODO: API auth/authorization, rate limiting; public GUI vs. authenticated API.
+
+\subsubsection{Maintainability}
+% TODO: Modularity, logging, config, CI. Anchor §6.4 evolvability here
+%       (10x consumers without redesign, new sources, new analyses).
+
+\subsubsection{Portability}
+% TODO: Other racing series, extra physical devices, no hard coupling to the
+%       OpenF1 schema or a single client application.
